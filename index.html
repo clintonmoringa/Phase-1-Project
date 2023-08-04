@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database</title>
+</head>
+<Title>     
+    Make a Navigation Bar  
+    </Title>  
+<div id="tpbr_topbar">
+
+</div>
+<body>  
+        <nav>  
+        <ul>  
+        <li>  
+        <a href="#"> Home </a>  
+        </li>  
+        <li>  
+        <a href="#"> About </a>  
+        </li>  
+        <li>  
+        <a href="#"> Contact </a>  
+        </li>    
+        </ul>  
+        </nav>     
+        </Html> 
+        <form id="searchForm"> 
+            <input type="search" id="query" name="q" placeholder="Search Employees">
+            <button>Search</button>
+          </form> 
+    <h1>Employee Management System</h1>
+    <table id="table">
+        <tr id="tr">
+            <th id="id">Employee Id</th>
+            <th id="Name">Employee Name</th>
+            <th id="post">Employee Post</th>
+            <th id="salary">Employee Salary</th>
+        <tr>
+     <tbody></tbody>   
+    </table>
+
+    <h2>Add Employee</h2>
+
+    <form id="postForm">
+        <input type="text" placeholder="Employee Name" name="employeeName">
+        <input type="text" placeholder="Employee Post" name="employeePost">
+        <input type="text" placeholder="Employee Salary" name="employeeSalary">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Update Employee</h2>
+
+    <form id="updateButton">
+        <input type="text" placeholder="Employee Id" name="employeeId">
+        <input type="text" placeholder="Employee Name" name="employeeName">
+        <input type="text" placeholder="Employee Post" name="employeePost">
+        <input type="text" placeholder="Employee Salary" name="employeeSalary">
+        <button type="submit">Update</button>
+    </form>
+    <h3> Delete Employee</h3>
+    <form id="Delete">
+        <input type="text" placeholder="Employee Id" name="employeeId">
+        <button id="DeleteButton">Delete</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

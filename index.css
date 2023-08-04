@@ -1,0 +1,89 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: #020110;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+font {
+    color: orange;
+}
+body{  
+    height: 125vh;  
+    margin-top: 80px;  
+    padding: 30px;  
+    background-size: cover;  
+    font-family: sans-serif; 
+    background-color: rgb(219, 167, 202); 
+    }  
+    header {  
+    background-color: orange;  
+    position: fixed;  
+    left: 0;  
+    right: 0;  
+    top: 5px;  
+    height: 30px;  
+    display: flex;  
+    align-items: center;  
+    box-shadow: 0 0 25px 0 black;  
+    }  
+    header * {  
+    display: inline;  
+    }  
+    header li {  
+    margin: 20px;  
+    }  
+    header li a {  
+    color: blue;  
+    text-decoration: none;  
+    }  
+    
+ h2 {
+    flex: none;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    margin-right: 80%;
+}
+ button {
+    color: rgba(0, 0, 0, 0.785);
+    background-color: rgba(112, 133, 197, 0.978);
+ }
+ form {
+    color: rgb(90, 90, 226);
+ }
+ h1 {
+    flex: none;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    margin-right: 60%;
+ }
+ h3 {
+    color: rgb(0, 2, 11);
+    background-color: rgb(250, 160, 242)255, 4, 0;
+}
+tpbr_tpobar {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    padding: 0px!important
+}
+
+
+element.style {
+    position: fixed;
+    z-index: 99998;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: #8224e3;
+}
