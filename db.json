@@ -1,39 +1,75 @@
 {
   "Employees": [
     {
-      "employeeId": "1",
+      "id": "1",
       "employeeName": "Clinton Maninga",
       "employeePost": "Chief Exertive Officer",
       "employeeSalary": "230000"
     },
     {
-      "employeeId": "2",
+      "id": "2",
       "employeeName": "Daisy Machoka",
       "employeePost": "Sector Manager",
       "employeeSalary": "180000"
     },
     {
-      "employeeId": "3",
+      "id": "3",
       "employeeName": "Willian Conliel",
       "employeePost": "Assistant Sector Manager",
       "employeeSalary": "150000"
     },
     {
-      "employeeId": "4",
+      "id": "4",
       "employeeName": "Laurence Namayi",
       "employeePost": "Human Resource Manager",
       "employeeSalary": "120000"
     },
     {
-      "employeeId": "5",
+      "id": "5",
       "employeeName": "Tracy Iminza",
+      "employeePost": "senor",
+      "employeeSalary": "56788"
+    },
+    {
+      "id": "6",
+      "employeeName": "Merceline Achieng",
       "employeePost": "Branch Manager",
       "employeeSalary": "100000"
     },
     {
-      "employeeId": "6",
-      "employeeName": "Merceline Achieng",
-      "employeePost": "Branch Manager",
+      "id": "7",
+      "employeeName": "",
+      "employeePost": "",
+      "employeeSalary": "100000"
+    },
+    {
+      "id": "8",
+      "employeeName": "",
+      "employeePost": "r",
+      "employeeSalary": "100000"
+    },
+    {
+      "id": "9",
+      "employeeName": "",
+      "employeePost": "",
+      "employeeSalary": "100000"
+    },
+    {
+      "id": "10",
+      "employeeName": "",
+      "employeePost": "",
+      "employeeSalary": "100000"
+    },
+    {
+      "id": "11",
+      "employeeName": "",
+      "employeePost": "",
+      "employeeSalary": "100000"
+    },
+    {
+      "id": "12",
+      "employeeName": "",
+      "employeePost": "",
       "employeeSalary": "100000"
     }
   ]

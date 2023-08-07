@@ -1,6 +1,10 @@
-function AddEmployee(){
+function AddEmployee(formid,formdata){
 
-  let table = document.getElementById("table")
+
+//addEmployee()   
+  
+  //console.log(addedEmployee)
+  //let table = document.getElementById("table")
  // tr = document.getElementsById(tr)
  // th = document.getElementsByClassName(employeeId)
   //th = document.getElementsByClassName(employeeName)
@@ -24,45 +28,55 @@ function AddEmployee(){
 
   
 
-    let form = document.getElementById("postForm")
-form.addEventListener("submit",function(event){
-    event.preventDefault()
-    AddEmployee()
-    form.reset() 
-})
-
-function UpdateEmployee(id){
-  let UpdatedEmpoyee = {
-    employeeId: "5",
-    employeeName: "Tracy Mukaba",
-    employeePost: "Branch Manager",
-    employeeSalary: "100000"
-  }
+    let form = document.querySelector("postForm")
+//form.addEventListener("submit",function(event){
+    //event.preventDefault()
+    //ddEmployee()
+    //form.reset() 
 
 
+function UpdateEmployee(formid,formdata){
+console.log(formdata,formid)
+   //updatedEmployeeatedEmployee = 
+    //document.createElement("tr")
+   //row.innerHTML=`<th>${employee.id}</th>
+   //<td>${employee.employeeName}</td>
+   //<td>${employee.employeePost}</td>
+   //<td>${employee.employeeSalary}</td>
+  
 
 
-  fetch(`http://localhost:3000/Employees/${id}`,{
+
+  fetcht(`http://localhost:3000/Employees/${parseInt(formid)}`,{
       method:"PUT",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(UpdatedEmpoyee)
+      body:JSON.stringify(updatedEmployee)
     })
     .then(response=>console.log(response.status))
     .catch(error=>console.log(error))
   }
 
 
-let updateButton = document.getElementById("updateButton")
-updateButton.addEventListener("click",function(){
-  UpdateEmployee()
+let updateButton = document.querySelector("#updateButton")
+//console.log(updateButton)
+updateButton.addEventListener("submit",function(e){
+e.preventDefault()
+//console.log(e.target)
+let body={
+
+}
+e.target.querySelectorAll("input").forEach(element=>{
+body[element.name]=element.value
+})
+//console.log(body)
+UpdateEmployee(body.Id,body)
 })
 //table.querySelector('#delete'){
 //row(removedata).addEventListener("click",function ())}
 
 
 
-//deleteButton.addEventListener("click", function(){
- // Deleat()
+
    
 //} )
 function getEmployees() {
@@ -75,7 +89,7 @@ function displayEmployees(employees){
   let tbody =document.querySelector("tbody")
   employees.forEach(employee => {
    let row = document.createElement("tr")
-   row.innerHTML=`<th>${employee.employeeId}</th>
+   row.innerHTML=`<th>${employee.id}</th>
    <td>${employee.employeeName}</td>
    <td>${employee.employeePost}</td>
    <td>${employee.employeeSalary}</td>
@@ -85,6 +99,10 @@ function displayEmployees(employees){
    tbody.appendChild(row)
   });
 }
+form.querySelector(deleteButton),addEventListener('click',() =>{
+form.remove()
+DeleteEmployee(employee.id)
+})
 
 
 const f = document.getElementById('SearchForm');
@@ -99,14 +117,31 @@ function submitted(event) {
   const win = window.open(url, '_blank');
   win.focus();
 }
+function DeleteEmployee(){
 
 //f.addEventListener('submit', submitted);
 
-let deleteButton = document.getElementById("deleteButton")
-function Deleat(id){
+let form = document.getElementById("deleteButton")
+
   fetch(`http://localhost:3000/Employees/${id}`,{
-      method:"DELETE"
+      method:"DELETE",
+      headers: {
+        "Content-Type":"application/json"
+      }
   })
-  .then(response=>console.log(response.status))
-  .catch(error=>console.log(error))
-}
+  .then((response) => response.json())
+  .then((data) => console.log(deletedemployee))
+  
+  
+  //let deleatedemployee =document.querySelector(tr)
+
+  
+ 
+    
+    }
+  
+  
+ 
+
+  
+
